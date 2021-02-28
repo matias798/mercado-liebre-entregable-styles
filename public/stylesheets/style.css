@@ -1,8 +1,47 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color:rgba(235,235,235,255)
 }
 
-a {
-  color: #00B7FF;
+a{
+  color:rgba(51,51,51,.6);
+  text-decoration: none;
+
+
 }
+
+a:link {
+  text-decoration: none;
+  color:rgba(51,51,51,.6);
+}
+
+
+/* navbar styles */
+.main-header{
+  background-color: #fff159;
+  font-size: 14px;}
+
+.main-navbar{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.left-navbar{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.right-navbar{
+
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+ul {
+  list-style-type:none;
+  color:rgba(51,51,51,.6);
+
+}
+
+/* toggle button is not displayed on pc  */
+.btn-toggle-navbar{display: none;}
