@@ -1,38 +1,78 @@
 <!DOCTYPE html>
 <html>
-  <!-- head -->
-	<%- include('partials/head',{title:'Mercado Libre Argentina'}) %>
-    
-  <body>
-  
-  <!-- navbar -->
-	<%- include('partials/navbar') %>
-  <!-- /navbar -->
-  
-  <!-- caroussel -->
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://http2.mlstatic.com/optimize/o:f_webp/resources/deals/exhibitors_resources/mla-home-desktop-slider-picture-98611f6c-f603-4788-85c1-fce1c63b59c9.jpg" class="d-block w-100" alt="...">
+   <!-- head -->
+   <%- include('partials/head',{title:'Mercado Libre Argentina'}) %>
+   <body>
+
+      <!-- navbar -->
+      <%- include('partials/navbar') %>
+      <!-- /navbar -->
+     
+      <!-- caroussel -->
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <img src="https://http2.mlstatic.com/optimize/o:f_webp/resources/deals/exhibitors_resources/mla-home-desktop-slider-picture-98611f6c-f603-4788-85c1-fce1c63b59c9.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+               <img src="https://http2.mlstatic.com/optimize/o:f_webp/resources/deals/exhibitors_resources/mla-home-desktop-slider-picture-103f3c47-b420-4936-8f6c-aeb6dc5f2901.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+               <img src="https://http2.mlstatic.com/optimize/o:f_webp/resources/deals/exhibitors_resources/mla-home-desktop-slider-picture-932f5fa4-348b-4d5e-814f-87da6ad357f7.jpg" class="d-block w-100" alt="...">
+            </div>
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         <span class="visually-hidden">Next</span>
+         </button>
       </div>
-      <div class="carousel-item">
-        <img src="https://http2.mlstatic.com/optimize/o:f_webp/resources/deals/exhibitors_resources/mla-home-desktop-slider-picture-103f3c47-b420-4936-8f6c-aeb6dc5f2901.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="https://http2.mlstatic.com/optimize/o:f_webp/resources/deals/exhibitors_resources/mla-home-desktop-slider-picture-932f5fa4-348b-4d5e-814f-87da6ad357f7.jpg" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-  
-  <!-- bootsrap script -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-</body>
+      <!-- /caroussel -->
+     
+      <!-- payment methods -->
+      <div class="container mt-3 mb-4">
+         <div class="card-group rounded">
+     
+          <!-- credit card -->
+            <div class="card">
+               <p class="card-text text-center pt-2 ">Tarjeta de crédito</p>
+               <img class="card-img-top align-self-center" src="https://http2.mlstatic.com/resources/frontend/homes-korriban/assets/images/payments/credit-card.svg" alt="" style="width: 50px;">
+               <small class="card-text text-center p-2">Ver promociones bancarias</small>
+            </div>
+            <!-- /credit card -->
+     
+            <!-- debit card -->
+            <div class="card ">
+               <p class="card-text text-center pt-2">Tarjeta de débito</p>
+               <img class="card-img-top align-self-center " src="https://http2.mlstatic.com/resources/frontend/homes-korriban/assets/images/payments/debit-card.svg" alt="" style="width: 40px;">
+               <small class="card-text text-center p-2">Ver más</small>
+            </div>
+            <!-- /debit card -->
+     
+            <!-- cash -->
+            <div class=" card">
+               <p class="card-text text-center pt-2">Efectivo</p>
+               <img class="card-img-top align-self-center" src="https://http2.mlstatic.com/resources/frontend/homes-korriban/assets/images/payments/payment-agreement.svg" alt="" style="width: 40px;">
+               <small class="card-text text-center">Ver más</small>
+            </div>
+            <!-- /cash -->
+     
+     <!-- other payent methods -->
+            <div class=" card">
+               <p class="card-text text-center pt-2">Más medios de pago</p>
+               <img class="card-img-top align-self-center " src="  https://http2.mlstatic.com/resources/frontend/homes-korriban/assets/images/payments/view-more.svg" alt="" style="width: 40px;">
+               <p class="card-text text-center">Ver todos</p>
+            </div>
+         </div>
+      <!-- /other payent methods -->
+      
+        </div>
+      <!-- /payment methods -->
+      
+      <!-- bootsrap script -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+   </body>
 </html>
