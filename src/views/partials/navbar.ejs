@@ -1,51 +1,45 @@
-<header class="main-header">
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-5 col-md-2">
-				<a href="/" class="main-header_home-link">
-					<img src="/images/logo.svg">
-				</a>
-			</div>
 
-			<div class="col">
-				<form action="/search" method="GET" class="search-form">
-					<input type="text" name="keywords" placeholder="Buscar productos, marcas y más" class="search-form_input w-50">
-					<button type="submit" class="search-form_button"><i class="fas fa-search"></i></button>
-				</form>
-			</div>
 
-			<div class="col-12 col-md-4">
-				<a href="#" class="main-header_credit-link">
-			<i class="fas fa-hand-holding-usd"></i>
-Comprá hoy y pagá después				
-</a>
-			</div>
-		</div>
+    <!-- header -->
+    <header class="header">
+	
+		<!-- logo -->
+        <a href="/"><img  class = "mercado-liebre-logo" src="/images/logo.svg"></a>
+        <!-- /logo -->
+		
+		<!-- searchbar -->
+		<div class = "header-div-busqueda">
+        <input class= "barra-busqueda" type="search" placeholder="Buscar productos, marcas y más."/>
+        <i class="icono-busqueda fas fa-search"></i>
+        </div>
+        <!-- /searchbar -->
 
-		<button class="btn-toggle-navbar">
-			<i class="fas fa-bars"></i>
-		</button>
+		<p class = "descripcion-header">
+            <i class="fas fa-hand-holding-usd"></i>
+            Comprá hoy y pagá después</p>
 
-		<nav class="main-navbar">
-			<ul class="left-navbar">
-				<li class="p-2"><a href="/products">Todos los productos</a></li>
-				<li class="p-2"><a href="#">categorias</a></li>
+        <!-- navbar -->
 
-				<li class="p-2"><a href="#">Ofertas</a></li>
-				<li class="p-2"><a href="#"> Historial</a></li>
-				<li class="p-2"><a href="/products/create">Supermercado</a></li>
-				<li class="p-2"><a href="#">Tiendas oficiales</a></li>
-				<li class="p-2"><a href="#"> vender</a></li>
+        <ul class = "navegacion-header">
+        <div class = "div-navegacion-header">
+            <li><a href="/">Ofertas</a></li>
+            <li><a href="/">Tiendas Oficiales</a></li>
+            <li><a href="/">Vender</a></li>
+            <li><a href="/"> Ayuda</a></li>
+        </div>
+    <div class = "div2-navegacion-header">
+            <li><a href="/register" class="m-2">Creá tu cuenta</a><i class="far fa-address-card"></i></li>
+			<li><a href="/login" class="m-2">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
+            <li><a href="/login" class="m-2">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
+			
+    </div>
+		</ul>
+		<!-- /navbar -->
 
-				<li class="p-2"><a href="#">ayuda</a></li>
 
-			</ul>
+<div class = "boton-menu">
+    <i class="header-menu fas fa-bars"></i>
+</div>
 
-			<ul class="right-navbar">
-				<li class="p-3"><a href="#">Creá tu cuenta </a></li>
-				<li class="p-3"><a href="#">Ingresá</a></li>
-				<li class="p-3"><a href="#">Mis compras </a></li>
-			</ul>
-		</nav>
-	</div>
 </header>
+<!-- /header -->

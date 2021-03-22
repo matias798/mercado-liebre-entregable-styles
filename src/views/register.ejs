@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+   <!-- head -->
+   <%- include('partials/head',{title:'Mercado Libre Argentina'}) %>
+   <body>
+
+      <!-- navbar -->
+      <%- include('partials/navbar') %>
+      <!-- /navbar -->
+
+
+
+
+
+<div>
+   <h3 class="text-center pt-3">Completa tus datos</h3>
+</div>
+
+<form action="/register" method="POST">
+<div class="card m-4 p-5">
+
+
+   <!-- nombre -->
+   <label class="mt-2" for="nombre">Nombre</label>
+  <input type="text" id="nombre" class="form-control">
+
+
+   <!-- Apellido -->
+   <label class="mt-2" for="Apellido">Apellido</label>
+ <input type="text" id="Apellido" class="form-control">
+
+
+<!-- nombre usuario -->
+
+<label class="mt-2" for="nombreDeUsuario">Nombre de usuario</label>
+<input type="text" id="nombreDeUsuario" class="form-control">
+<!--/nombre usuario -->
+
+   <!-- email -->
+   <label class="mt-2" for="email">E-mail</label>
+<input type="email" id="email" class="form-control">
+<!-- /email -->
+
+<!-- fecha de nacimiento -->
+<label class="mt-2" for="fechaDeNacimiento">fecha de nacimiento</label>
+  <input type="date" id="fechaDeNacimiento" class="form-control">
+<!-- fecha de nacimiento -->
+
+<!-- Domicilio -->
+
+<label class="mt-2" for="Domicilio">Domicilio</label>
+<input type="text" id="Domicilio" class="form-control">
+<!-- /Domicilio -->
+
+
+<!-- Perfil de usuario -->
+
+<div class="mt-3">
+   <h6>Perfil de usuario</h6>
+   <input type="radio" name="perfil" value="comprador" >
+   <span class="pe-4">Comprador</span>
+
+   <input type="radio" name="perfil" value="vendedor">
+   Vendedor
+</div>
+<!-- /Perfil de usuario -->
+
+
+<!-- Intereses  -->
+<h6 class="mt-4 bolder">Intereses </h6>
+<div class="d-flex justify-content-around" >
+
+   <div >
+       <input type="checkbox" name="intereses" value="electro"> Electro
+   </div>
+   <div >
+       <input type="checkbox" name="intereses" value="moda"> Moda
+   </div>
+   <div >
+       <input type="checkbox" name="intereses" value="hogar"> Hogar
+   </div>
+   <div >
+       <input type="checkbox" name="intereses" value="jugueteria"> Juguetería
+   </div>
+   <div >
+       <input type="checkbox" name="intereses" value="vida_sana"> Vida Sana
+   </div>
+</div>
+<!-- /Intereses  -->
+
+<!-- foto de usuario -->
+<h6 class="mt-4">Elige tu foto de usuario</h6>
+<input  type="file" name="imagen" id="imagen" accept="image/png, image/jpeg, image/jpg" >
+
+<!-- /foto de usuario -->
+
+<!-- password -->
+<label class="mt-3" for="password">Contraseña</label>
+<input type="password" id="password" class="form-control">
+<!-- /password -->
+
+
+<!-- Confirmar contraseña -->
+<label class="mt-3" for="confirmarContraseña">Confirmar contraseña</label>
+<input type="password" id="confirmarContraseña" class="form-control">
+<!-- / Confirmar contraseña -->
+
+
+<!-- boton de completar el formulario -->
+<div class=" mt-4">
+   <button class="btn btn-primary">Completar</button>
+</div>
+<!-- /boton de completar el formulario -->
+
+
+<!-- boton de completar el formulario -->
+<div class="mt-2 " >
+   <button type="reset" class="btn btn-danger">Borrar</button>
+</div>
+<!-- /boton de completar el formulario -->
+
+</div>
+
+
+</form>
+
+<!-- footer -->
+<%- include('partials/footer') %>
+<!-- /footer -->
+
+<!-- bootsrap script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+   
+</body>
+</html>
