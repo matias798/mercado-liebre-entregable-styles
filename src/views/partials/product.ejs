@@ -1,0 +1,44 @@
+
+<container class="d-flex justify-content-around wrap">
+    <%for(let i = 0 ; i < productos.length ; i ++) { %>
+
+ <!-- tarjeta -->
+    <div class="card zoom shadow m-3">
+
+<!-- imagen -->
+<div class="d-flex justify-content-center">
+<img class="imagen text-center" src="../images/<%= productos[i].imagenes%>" alt="" style="width: 40%;">
+</div>
+<!-- /imagen -->
+
+<!-- titulo -->
+<span class="text-center">
+<%= productos[i].titulo%>
+</span>
+ <!-- /titulo -->
+
+<div class="d-flex justify-content-center">
+
+
+<!-- precio -->
+<span class="text-center m-3">
+    <%= productos[i].precio%>
+    </span>
+    <!-- /precio -->
+    
+
+    <!-- descuento -->
+<span class="descuento m-3 ">
+    <%= productos[i].descuento%>
+</span>
+<!-- /descuento -->
+
+
+</div>
+
+</div>
+<!--/ tarjeta -->
+
+<%}%>
+
+</container>
