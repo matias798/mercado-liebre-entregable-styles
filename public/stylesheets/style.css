@@ -15,6 +15,8 @@ a:link {
 }
 
 
+/* el boton no se muestra en la vista de pc */
+.wrapButon{display: none;}
 /* navbar styles */
 .main-header{
   background-color: #fff159;
@@ -25,24 +27,33 @@ a:link {
   justify-content: flex-start;
 }
 
-.left-navbar{
-  display: flex;
-  justify-content: flex-start;
+
+.mercado-liebre-logo{
+  padding: 10px;
+  width: 90%;
+  
 }
-
-.right-navbar{
-
-  display: flex;
-  justify-content: flex-end;
-
+.nav-link{
+  padding-right:10em ;
 }
 
 ul {
   list-style-type:none;
   color:rgba(51,51,51,.6);
-
 }
 
+/* estilos de flexbox  */
+.linksNavegacion{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.titulo{padding:10px}
+
+.search{
+border: solid black 1px;
+border-radius: 5px;
+}
 /* toggle button is not displayed on pc  */
 .btn-toggle-navbar{display: none;}
 
@@ -53,3 +64,4 @@ ul {
   flex-wrap: wrap;
 }
 
+media(max-s)

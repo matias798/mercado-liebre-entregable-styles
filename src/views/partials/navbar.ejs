@@ -1,45 +1,55 @@
+<header class="main-header">
+
+    <div class="linksNavegacion">    
+    <!-- logo -->
+    <a href="/"><img  class = "mercado-liebre-logo" src="/images/logo.svg"></a>
+    <!-- /logo -->
 
 
-    <!-- header -->
-    <header class="header">
-	
-		<!-- logo -->
-        <a href="/"><img  class = "mercado-liebre-logo" src="/images/logo.svg"></a>
-        <!-- /logo -->
-		
-		<!-- searchbar -->
-		<div class = "header-div-busqueda">
-        <input class= "barra-busqueda" type="search" placeholder="Buscar productos, marcas y más."/>
-        <i class="icono-busqueda fas fa-search"></i>
-        </div>
-        <!-- /searchbar -->
+<form class="p-4" action= "/" method="GET">
+    <input class="search" type="search" name="busqueda" id="busqueda" placeholder="Buscá productos, etc.">
+    <button name="busqueda" id="busqueda"><i class="fas fa-search"></i></button>
+</form>
 
-		<p class = "descripcion-header">
-            <i class="fas fa-hand-holding-usd"></i>
-            Comprá hoy y pagá después</p>
-
-        <!-- navbar -->
-
-        <ul class = "navegacion-header">
-        <div class = "div-navegacion-header">
-            <li><a href="/">Ofertas</a></li>
-            <li><a href="/">Tiendas Oficiales</a></li>
-            <li><a href="/">Vender</a></li>
-            <li><a href="/"> Ayuda</a></li>
-        </div>
-    <div class = "div2-navegacion-header">
-            <li><a href="/register" class="m-2">Creá tu cuenta</a><i class="far fa-address-card"></i></li>
-			<li><a href="/login" class="m-2">Ingresá</a><i class="fas fa-sign-in-alt"></i></li>
-            <li><a href="/login" class="m-2">Mis compras</a><i class="fas fa-shopping-basket"></i></li>
-			
-    </div>
-		</ul>
-		<!-- /navbar -->
-
-
-<div class = "boton-menu">
-    <i class="header-menu fas fa-bars"></i>
+<div class="titulo">
+    <i class="fas fa-hand-holding-usd"></i>
+    <h5>Comprá en cuotas y sin tarjeta de crédito</h5>
 </div>
 
+</div>
+
+
+<button class="wrapButon"><i class="fas fa-bars"></i></button>
+    <section class="links"> 
+        <ul class="linksNavegacion">
+
+          <div class="linksNavegacion"> 
+               <li class="nav-link">
+                <a href="http://localhost:3000/ofertas">Ofertas</a>
+            </li>
+            <li class="nav-link">
+                <a href="http://localhost:3000/tiendas-oficiales">Tiendas Oficiales</a>
+            </li>
+            <li class="nav-link">
+                <a href="http://localhost:3000/vender">Vender</a>
+            </li>
+            <li class="nav-link">
+                <a href="http://localhost:3000/ayuda">Ayuda</a>
+            </li> 
+        </div>
+
+    <div class="linksNavegacion">
+            <li class="nav-link">
+                <a href="/users/register">Creá tu cuenta</a>
+            </li>
+            <li class="nav-link">
+                <a href="/users/login">Ingresá</a>
+            </li class="nav-link">
+            <li class="nav-link">
+                <a href="http://localhost:3000/mis-compras">Mis compras</a>
+            </li >
+     </div>
+       </ul>
+    </section>
 </header>
-<!-- /header -->
+
