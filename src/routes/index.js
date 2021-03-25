@@ -35,4 +35,10 @@ router.get('/', function(req, res, next) {
   res.render('index',{productos});
 });
 
+/* GET not faound page. */
+router.get('/pageNotFound', function(req, res, next) {
+  res.render('notFoundPage');
+});
+
+
 module.exports = router;
