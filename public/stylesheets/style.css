@@ -28,8 +28,7 @@ a:link {
 
 
 .mercado-liebre-logo{
-  padding: 10px;
-  width: 90%;
+  width: 20%;
   
 }
 .nav-link{
@@ -57,6 +56,7 @@ ul {
 border: solid black 1px;
 border-radius: 5px;
 }
+.serch{height: 3em;}
 
 /* payment methods */
 .normalPaymentMethods{
